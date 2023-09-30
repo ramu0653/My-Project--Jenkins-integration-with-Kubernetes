@@ -1,0 +1,22 @@
+Jenkins plugins installed in this project are:
+
+1.kubernetes-cd.hpi from local laptop using --plugins---advanced settings --jenkins dashboard
+
+Pipeline syntax used in this project:
+
+1.git: Git
+
+
+2.withCredentials: Bind credentials to variables  ----secret text -----
+variable: DOCKER_HUB_CREDENTIALS
+Credentials: add---kind--secret text---147R1a0329(Dockerhub passwd) Id-DOCKER_HUB_CREDENTIALS
+
+
+Manage jenkins --> Tools -->Maven installations -->Maven Name: Maven-3.8.4 -->Install automatically -->Version:3.8.4
+
+
+
+
+Note: For jenkins,git,maven,docker --Take one Amazon linux 2023 AMI -t2.medium
+      For kubernetes master -- Take one Amazon linux 2 AMI (HVM) -t2.medium
+      For kubernetes worker node1 & worker node 2  --Take two Amazon linux 2 AMI (HVM) -t2.micro
